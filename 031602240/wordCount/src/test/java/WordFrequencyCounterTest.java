@@ -14,6 +14,7 @@ public class WordFrequencyCounterTest {
                         WordsFrequencyCounter.countWordsFrequency("wordFrequencyCounterTest.txt"));
         HashMap<String, Long> map = new HashMap<String, Long>();
         map.put("file123", 1L);
+        map.put("file", 1L);
         map.put("aaaa", 2L);
         ArrayList<HashMap.Entry<String, Long>> testList = new ArrayList<HashMap.Entry<String, Long>>(map.entrySet());
         assertEquals(testList, wordList);
